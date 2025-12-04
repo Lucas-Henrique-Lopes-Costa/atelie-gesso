@@ -24,8 +24,8 @@ export default function Home() {
     },
     {
       id: "sancas",
-      title: "Sancas, Nichos e Forros",
-      description: "O toque de design e funcionalidade no seu teto. Criamos forros rebaixados que valorizam a iluminação.",
+      title: "Sanca, Nichos e Forros",
+      description: "Criamos um ambiente aconchegante para o seu lar com Sanca, Nichos, Forros, Paredes, Molduras e etc.",
       icon: "sancas"
     },
     {
@@ -60,8 +60,8 @@ export default function Home() {
       description: "Respeito ao seu tempo. Entregamos no prazo combinado, sem atrasos ou surpresas."
     },
     {
-      title: "Solução Completa (Turn-Key)",
-      description: "Gesso, Drywall, Iluminação, Elétrica e Pintura. Um único ponto de contato."
+      title: "Solução Completa",
+      description: "Sanca, Nichos, Forros, Paredes, Molduras e etc."
     },
     {
       title: "Consultoria Personalizada",
@@ -82,7 +82,12 @@ export default function Home() {
             <a href="#diferenciais" className="hover:text-accent transition-colors">Diferenciais</a>
             <a href="#contato" className="hover:text-accent transition-colors">Contato</a>
           </div>
-          <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:bg-secondary">
+          <Button
+            variant="default"
+            size="sm"
+            className="bg-primary text-primary-foreground hover:bg-secondary"
+            onClick={() => window.open('https://wa.me/5511999577658', '_blank')}
+          >
             Solicitar Orçamento
           </Button>
         </div>
@@ -91,16 +96,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/hero-gesso.jpg" 
-            alt="Ateliê de Gesso - Ambiente Premium" 
+          <img
+            src="/hero-gesso.jpg"
+            alt="Ateliê de Gesso - Ambiente Premium"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        
+
         <div className="container relative z-10 text-white">
-          <motion.div 
+          <motion.div
             className="max-w-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -112,17 +117,18 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 font-light">
               Precisão, qualidade e sofisticação em cada projeto. Transformando ambientes há mais de 20 anos.
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold transition-all hover:shadow-lg"
+              onClick={() => window.open('https://wa.me/5511999577658', '_blank')}
             >
               Solicite seu Orçamento <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </motion.div>
         </div>
-        
+
         {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
@@ -136,45 +142,45 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-5xl font-bold mb-8 text-display" style={{fontSize: '80px'}}>
+              <h2 className="text-5xl font-bold mb-8 text-display" style={{ fontSize: '96px' }}>
                 Sobre Nós
               </h2>
-              <p className="text-lg text-foreground/80 mb-6 leading-relaxed" style={{fontSize: '24px'}}>
+              <p className="text-lg text-foreground/80 mb-6 leading-relaxed" style={{ fontSize: '28' }}>
                 O Ateliê de Gesso não apenas executa serviços: nós transformamos espaços. Com mais de duas décadas de experiência, consolidamos nossa marca como referência em soluções completas de gesso, drywall, iluminação e decoração, sempre atuando ao lado de parceiros especializados para oferecer resultados de excelência.
               </p>
               <div className="space-y-4">
-                <motion.div 
+                <motion.div
                   className="flex gap-4"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold text-accent" style={{fontSize: '50px'}}>20+</div>
+                  <div className="text-3xl font-bold text-accent" style={{ fontSize: '60px' }}>20+</div>
                   <div>
-                    <div className="font-semibold" style={{fontSize: '24px'}}>Anos de Experiência</div>
-                    <div className="text-sm text-foreground/60" style={{fontSize: '20px'}}>Referência no mercado</div>
+                    <div className="font-semibold" style={{ fontSize: '28px' }}>Anos de Experiência</div>
+                    <div className="text-sm text-foreground/60" style={{ fontSize: '22px' }}>Referência no mercado</div>
                   </div>
                 </motion.div>
-                <motion.div 
+                <motion.div
                   className="flex gap-4"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold text-accent" style={{fontSize: '50px'}}>40k+</div>
+                  <div className="text-3xl font-bold text-accent" style={{ fontSize: '60px' }}>40k+</div>
                   <div>
-                    <div className="font-semibold" style={{fontSize: '24px'}}>m² Executados</div>
-                    <div className="text-sm text-foreground/60" style={{fontSize: '20px'}}>Projetos de alta qualidade</div>
+                    <div className="font-semibold" style={{ fontSize: '28px' }}>m² Executados</div>
+                    <div className="text-sm text-foreground/60" style={{ fontSize: '22px' }}>Projetos de alta qualidade</div>
                   </div>
                 </motion.div>
               </div>
             </div>
             <div className="relative h-96 md:h-full rounded-lg overflow-hidden">
-              <img 
-                src="/loja-atelie.webp" 
-                alt="Loja Ateliê de Gesso" 
+              <img
+                src="/loja-atelie.webp"
+                alt="Loja Ateliê de Gesso"
                 className="w-full h-full object-cover rounded-lg shadow-2xl"
               />
             </div>
@@ -211,16 +217,16 @@ export default function Home() {
                   {service.icon === "eletrica" && <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />}
                   {service.icon === "pintura" && <><circle cx="12" cy="12" r="10" /><circle cx="8" cy="8" r="2" fill="currentColor" /><circle cx="16" cy="8" r="2" fill="currentColor" /><circle cx="8" cy="16" r="2" fill="currentColor" /><circle cx="16" cy="16" r="2" fill="currentColor" /></>}
                 </svg>
-                <h3 className="text-xl font-bold mb-3 text-display group-hover:text-accent transition-colors" style={{fontSize: '30px'}} style={{fontSize: '24px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}}>
+                <h3 className="text-xl font-bold mb-3 text-display group-hover:text-accent transition-colors" style={{ fontSize: '32px' }}>
                   {service.title}
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed" style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}}>
+                <p className="text-sm text-foreground/70 leading-relaxed" style={{ fontSize: '20px' }}>
                   {service.description}
                 </p>
               </motion.div>
             ))}
           </div>
-          
+
           <div className="flex justify-center mt-12">
             <a href="/portfolio" className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all hover:shadow-lg">
               Ver Mais Projetos
@@ -285,8 +291,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {diferenciais.map((item, idx) => (
-              <motion.div 
-                key={idx} 
+              <motion.div
+                key={idx}
                 className="bg-background p-8 rounded-lg border border-border hover:border-accent transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -297,8 +303,8 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
                   <div className="w-6 h-6 bg-accent rounded-full"></div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-display" style={{fontSize: '30px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}} style={{fontSize: '30px'}}>{item.title}</h3>
-                <p className="text-foreground/70 leading-relaxed" style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}} style={{fontSize: '18px'}}>{item.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-display" style={{ fontSize: '30px' }} style={{ fontSize: '30px' }} style={{ fontSize: '30px' }} style={{ fontSize: '30px' }} style={{ fontSize: '30px' }} style={{ fontSize: '30px' }}>{item.title}</h3>
+                <p className="text-foreground/70 leading-relaxed" style={{ fontSize: '18px' }} style={{ fontSize: '18px' }} style={{ fontSize: '18px' }} style={{ fontSize: '18px' }} style={{ fontSize: '18px' }} style={{ fontSize: '18px' }}>{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -316,7 +322,7 @@ export default function Home() {
               Contamos com a parceria especializada de <span className="font-semibold">Patrícia Setten</span>, Designer de Interiores com mais de 20 anos de experiência no ramo. Patrícia desenvolve <span className="font-semibold">projetos executivos e projetos em 3D de alta qualidade</span>, garantindo que cada detalhe do seu ambiente seja pensado com precisão estética e funcionalidade.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-muted/50 p-8 rounded-lg border border-border hover:border-accent transition-colors text-center">
               <svg className="w-12 h-12 mx-auto mb-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -326,23 +332,23 @@ export default function Home() {
                 <circle cx="8" cy="16" r="1.5" fill="currentColor" />
                 <circle cx="16" cy="16" r="1.5" fill="currentColor" />
               </svg>
-              <h3 className="text-xl font-bold mb-3 text-display" style={{fontSize: '30px'}}>Projetos Executivos</h3>
-              <p className="text-foreground/70" style={{fontSize: '18px'}}>Detalhamento técnico completo para execução da sua obra.</p>
+              <h3 className="text-xl font-bold mb-3 text-display" style={{ fontSize: '30px' }}>Projetos Executivos</h3>
+              <p className="text-foreground/70" style={{ fontSize: '18px' }}>Detalhamento técnico completo para execução da sua obra.</p>
             </div>
             <div className="bg-muted/50 p-8 rounded-lg border border-border hover:border-accent transition-colors text-center">
               <svg className="w-12 h-12 mx-auto mb-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 3l18 18M3 21L21 3" />
                 <rect x="2" y="2" width="20" height="20" fill="none" />
               </svg>
-              <h3 className="text-xl font-bold mb-3 text-display" style={{fontSize: '30px'}}>Projetos 3D</h3>
-              <p className="text-foreground/70" style={{fontSize: '18px'}}>Visualização realista do seu ambiente antes da execução.</p>
+              <h3 className="text-xl font-bold mb-3 text-display" style={{ fontSize: '30px' }}>Projetos 3D</h3>
+              <p className="text-foreground/70" style={{ fontSize: '18px' }}>Visualização realista do seu ambiente antes da execução.</p>
             </div>
             <div className="bg-muted/50 p-8 rounded-lg border border-border hover:border-accent transition-colors text-center">
               <svg className="w-12 h-12 mx-auto mb-4 text-accent" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
-              <h3 className="text-xl font-bold mb-3 text-display" style={{fontSize: '30px'}}>20+ Anos</h3>
-              <p className="text-foreground/70" style={{fontSize: '18px'}}>Experiência consolidada em design de interiores.</p>
+              <h3 className="text-xl font-bold mb-3 text-display" style={{ fontSize: '30px' }}>20+ Anos</h3>
+              <p className="text-foreground/70" style={{ fontSize: '18px' }}>Experiência consolidada em design de interiores.</p>
             </div>
           </div>
         </div>
@@ -357,9 +363,10 @@ export default function Home() {
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
             Dê o primeiro passo em direção ao ambiente que você sempre sonhou.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-base font-semibold"
+            onClick={() => window.open('https://wa.me/5511999577658', '_blank')}
           >
             Transforme Seu Ambiente — Solicite Seu Orçamento <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
@@ -378,39 +385,39 @@ export default function Home() {
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <MessageCircle className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">WhatsApp</h3>
-              <p className="text-foreground/70 text-sm mb-4" style={{fontSize: '18px'}}>(11) 99957-7658</p>
-              <p className="text-xs text-foreground/50" style={{fontSize: '15px'}}>Fabrício Setten</p>
+              <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>(11) 99957-7658</p>
+              <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>Fabrício Setten</p>
             </div>
 
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <Phone className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">Telefone</h3>
-              <p className="text-foreground/70 text-sm mb-4" style={{fontSize: '18px'}}>(11) 4220-5045</p>
-              <p className="text-xs text-foreground/50" style={{fontSize: '15px'}}>Segunda a sexta, 9h-17h</p>
+              <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>(11) 4220-5045</p>
+              <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>Segunda a sexta, 9h-17h</p>
             </div>
 
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <Mail className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">E-mail</h3>
-              <p className="text-foreground/70 text-sm mb-4" style={{fontSize: '18px'}}>contatoateliedogesso@gmail.com</p>
-              <p className="text-xs text-foreground/50" style={{fontSize: '15px'}}>Resposta em 24h</p>
+              <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>contatoateliedogesso@gmail.com</p>
+              <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>Resposta em 24h</p>
             </div>
 
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <MapPin className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">Loja</h3>
-              <p className="text-foreground/70 text-sm mb-4" style={{fontSize: '18px'}}>Av. Presidente Kennedy, 3251</p>
-              <p className="text-xs text-foreground/50" style={{fontSize: '15px'}}>São Caetano do Sul, SP</p>
+              <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>Av. Presidente Kennedy, 3251</p>
+              <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>São Caetano do Sul, SP</p>
             </div>
           </div>
 
           <div className="mt-12 text-center">
             <p className="text-foreground/60 mb-6">Nos encontre nas redes sociais</p>
             <div className="flex gap-6 justify-center">
-              <a href="#" className="text-accent hover:text-accent/80 transition-colors">
+              <a href="https://www.instagram.com/ateliedegesso/" className="text-accent hover:text-accent/80 transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-accent hover:text-accent/80 transition-colors">
+              <a href="https://wa.me/5511999577658" className="text-accent hover:text-accent/80 transition-colors">
                 <MessageCircle className="w-6 h-6" />
               </a>
             </div>
