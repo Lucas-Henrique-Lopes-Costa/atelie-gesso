@@ -381,7 +381,7 @@ export default function Home() {
             <p className="text-xl text-foreground/70">Estamos prontos para iniciar a transformação do seu projeto.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <MessageCircle className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">WhatsApp</h3>
@@ -397,18 +397,18 @@ export default function Home() {
             </div>
 
             <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
-              <Mail className="w-8 h-8 mx-auto mb-4 text-accent" />
-              <h3 className="font-bold mb-2">E-mail</h3>
-              <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>contatoateliedogesso@gmail.com</p>
-              <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>Resposta em 24h</p>
-            </div>
-
-            <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
               <MapPin className="w-8 h-8 mx-auto mb-4 text-accent" />
               <h3 className="font-bold mb-2">Loja</h3>
               <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>Av. Presidente Kennedy, 3251</p>
               <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>São Caetano do Sul, SP</p>
             </div>
+          </div>
+
+          <div className="bg-muted/50 p-8 rounded-lg text-center border border-border hover:border-accent transition-colors">
+            <Mail className="w-8 h-8 mx-auto mb-4 text-accent" />
+            <h3 className="font-bold mb-2">E-mail</h3>
+            <p className="text-foreground/70 text-sm mb-4" style={{ fontSize: '18px' }}>contatoateliedegesso@gmail.com</p>
+            <p className="text-xs text-foreground/50" style={{ fontSize: '15px' }}>Resposta em 24h</p>
           </div>
 
           <div className="mt-12 text-center">

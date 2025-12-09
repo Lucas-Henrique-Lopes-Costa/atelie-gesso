@@ -14,25 +14,14 @@ import { Link } from "wouter";
 export default function Portfolio() {
   // All portfolio photos - 6 main + 28 additional
   const portfolioPhotos = [
-    // Main 6 photos (displayed on home page)
     { src: "/portfolio-01.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-02.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-03.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-04.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-05.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-06.jpg", alt: "Projeto Ateliê de Gesso" },
-    // Additional 28 photos
     { src: "/portfolio-extra-01.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-02.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-03.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-04.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-05.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-06.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-07.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-08.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-09.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-010.jpg", alt: "Projeto Ateliê de Gesso" },
-    { src: "/portfolio-extra-11.jpg", alt: "Projeto Ateliê de Gesso" },
+   
     { src: "/portfolio-extra-12.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-extra-13.jpg", alt: "Projeto Ateliê de Gesso" },
     { src: "/portfolio-extra-14.jpg", alt: "Projeto Ateliê de Gesso" },
